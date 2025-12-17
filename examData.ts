@@ -1,186 +1,397 @@
 
 import { Exam } from './types';
 
-export const navigateB1Exam: Exam = {
-  title: "InterNation Pre-Intermediate Exam Workshop",
-  durationMinutes: 70,
-  sections: [
-    {
-      title: "GRAMMAR TASKS",
-      tasks: [
-        {
-          id: "task1",
-          title: "Task 1",
-          instructions: "Choose the correct option: will, won’t, might or might not.",
-          type: "MCQ",
-          questions: [
-            { id: "q1", prompt: "1. If call him now, he ________ answer. It is late.", options: [{label: "might", value: "a"}, {label: "might not", value: "b"}, {label: "will", value: "c"}], correctAnswer: "b" },
-            { id: "q2", prompt: "2. She ________ go to the concert. She hasn’t decided yet.", options: [{label: "might", value: "a"}, {label: "won’t", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
-            { id: "q3", prompt: "3. They ________ come to visit us. They’re busy this weekend.", options: [{label: "won’t", value: "a"}, {label: "will", value: "b"}, {label: "might", value: "c"}], correctAnswer: "a" },
-            { id: "q4", prompt: "4. If you don’t eat breakfast, you ________ feel tired later.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "won’t", value: "c"}], correctAnswer: "a" },
-            { id: "q5", prompt: "5. There ___be any milk left in the fridge. We should check.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "won’t", value: "c"}], correctAnswer: "b" },
-            { id: "q6", prompt: "6. I ____ help you with your homework later if I have time.", options: [{label: "might", value: "a"}, {label: "won’t", value: "b"}, {label: "might not", value: "c"}], correctAnswer: "a" },
-            { id: "q7", prompt: "7. Jane ________ go to the meeting. She said she’s feeling unwell.", options: [{label: "might not", value: "a"}, {label: "will", value: "b"}, {label: "won’t", value: "c"}], correctAnswer: "c" },
-            { id: "q8", prompt: "8. He _____buy a new car soon. He’s been saving up for months.", options: [{label: "won’t", value: "a"}, {label: "might not", value: "b"}, {label: "will", value: "c"}], correctAnswer: "c" },
-            { id: "q9", prompt: "9. You ____see dolphins during the boat trip. It’s a rare but exciting chance!", options: [{label: "might", value: "a"}, {label: "won’t", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
-            { id: "q10", prompt: "10. My brother _____ clean his room unless my mom tells him to.", options: [{label: "won’t", value: "a"}, {label: "might not", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
-          ]
-        },
-        {
-          id: "task2",
-          title: "Task 2",
-          instructions: "Choose the correct option: will, won’t, might or might not.",
-          type: "MCQ",
-          questions: [
-            { id: "q1", prompt: "I __________ probably forget to call you later to discuss our plans. Please, remind me.", options: [{label: "won’t", value: "a"}, {label: "will", value: "b"}, {label: "might", value: "c"}], correctAnswer: "b" },
-            { id: "q2", prompt: "If it snows tomorrow, the lessons __________ be canceled, but I am not sure about it.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "might", value: "c"}], correctAnswer: "c" },
-            { id: "q3", prompt: "I __________ be able to buy a new car because I don’t have enough money.", options: [{label: "might not", value: "a"}, {label: "will not", value: "b"}, {label: "will", value: "c"}], correctAnswer: "b" },
-            { id: "q4", prompt: "He __________ travel to the Maldives if he makes more money.", options: [{label: "might", value: "a"}, {label: "might not", value: "b"}, {label: "won’t", value: "c"}], correctAnswer: "a" },
-            { id: "q5", prompt: "If you don’t water plants regularly, they __________ die.", options: [{label: "won’t", value: "a"}, {label: "might", value: "b"}, {label: "will", value: "c"}], correctAnswer: "c" },
-          ]
-        },
-        {
-          id: "task3",
-          title: "Task 3",
-          instructions: "Complete the sentence with past simple or past continuous form of the verb. (e.g. Natalia was watching TV when her boyfriend arrived)",
-          type: "FILL_IN",
-          questions: [
-            { id: "q1", prompt: "1) While my mother [gap1] (cook) dinner, my sister [gap2] (come) home.", correctAnswer: ["was cooking", "came"] },
-            { id: "q2", prompt: "2) They [gap1] (have) dinner when I arrived at the restaurant.", correctAnswer: ["were having"] },
-            { id: "q3", prompt: "3) I was explaining the topic when my student [gap1] (enter) the room.", correctAnswer: ["entered"] },
-            { id: "q4", prompt: "4) When you [gap1] (call) me, I was playing a phone game.", correctAnswer: ["called"] },
-            { id: "q5", prompt: "5) While we [gap1] (walk) in the park, we [gap2] (find) a lost wallet.", correctAnswer: ["were walking", "found"] },
-          ]
-        },
-        {
-          id: "task4",
-          title: "Task 4",
-          instructions: "Complete the sentence with past simple or past continuous form of the verb.",
-          type: "FILL_IN",
-          questions: [
-            { id: "q1", prompt: "1) My father [gap1] (speak) on the phone as he was driving.", correctAnswer: ["was speaking"] },
-            { id: "q2", prompt: "2) They [gap1] (leave) the party early because they were tired.", correctAnswer: ["left"] },
-            { id: "q3", prompt: "3) She [gap1] (not pass) her exam because she missed the workshop.", correctAnswer: ["didn't pass"] },
-            { id: "q4", prompt: "4) While [gap1] (walk) in the zoo, we [gap2] (see) a bear.", correctAnswer: ["walking", "saw"] },
-            { id: "q5", prompt: "5) He [gap1] (plan) their vacation when his friend called.", correctAnswer: ["was planning"] },
-          ]
-        },
-        {
-          id: "task5",
-          title: "Task 5",
-          instructions: "Choose the correct modal verb to complete the sentence.",
-          type: "MCQ",
-          questions: [
-            { id: "q1", prompt: "1. You ________ (have to / can) show your ID at the entrance.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
-            { id: "q2", prompt: "2. I ________ (have to / don't have to) take an umbrella today because it's sunny.", options: [{label: "have to", value: "have to"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "don't have to" },
-            { id: "q3", prompt: "3. She ________ (can’t / must) complete her assignment before she goes out.", options: [{label: "can’t", value: "can’t"}, {label: "must", value: "must"}], correctAnswer: "must" },
-            { id: "q4", prompt: "4. We ________ (mustn't / can) leave our bags unattended in the airport.", options: [{label: "mustn't", value: "mustn't"}, {label: "can", value: "can"}], correctAnswer: "mustn't" },
-            { id: "q5", prompt: "5. They ________ (can't / can) use their phones during the exam.", options: [{label: "can't", value: "can't"}, {label: "can", value: "can"}], correctAnswer: "can't" },
-            { id: "q6", prompt: "6. He ________ (has to / doesn't have to) wear a tie to the office.", options: [{label: "has to", value: "has to"}, {label: "doesn't have to", value: "doesn't have to"}], correctAnswer: "has to" },
-            { id: "q7", prompt: "7. You ________ (have to / don't have to) bring a gift if you're invited.", options: [{label: "have to", value: "have to"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "don't have to" },
-            { id: "q8", prompt: "8. We ________ (mustn't / don't have to) disturb the quiet in the library.", options: [{label: "mustn't", value: "mustn't"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "mustn't" },
-            { id: "q9", prompt: "9. She ________ (can / must) ask for help if she doesn't understand.", options: [{label: "can", value: "can"}, {label: "must", value: "must"}], correctAnswer: "can" },
-            { id: "q10", prompt: "10. You ________ (can / must) choose your own seat; it's first come, first served.", options: [{label: "can", value: "can"}, {label: "must", value: "must"}], correctAnswer: "can" },
-          ]
-        },
-        {
-          id: "task7",
-          title: "Task 7",
-          instructions: "Complete the sentences with the correct form of the verbs (First Conditional).",
-          type: "FILL_IN",
-          questions: [
-            { id: "q2", prompt: "2) I [gap1] (not/buy) you a coke if you [gap2] (not/clean) my room for me.", correctAnswer: ["won't buy", "don't clean"] },
-            { id: "q3", prompt: "3) If I [gap1] (see) Laziz, I [gap2] (tell) him the news.", correctAnswer: ["see", "will tell"] },
-            { id: "q4", prompt: "4) My mom [gap1] (be) angry if my brother [gap2] (come) home late.", correctAnswer: ["will be", "comes"] },
-            { id: "q5", prompt: "5) If she [gap1] (not/practice) every day, she [gap2] (not/become) a great musician.", correctAnswer: ["doesn't practice", "won't become"] },
-          ]
-        },
-        {
-          id: "task8",
-          title: "Task 8",
-          instructions: "Complete the sentences with the correct form of the verbs (Second Conditional).",
-          type: "FILL_IN",
-          questions: [
-            { id: "q2", prompt: "2. If she [gap1] alive, she [gap2] me some good advice. (be / give)", correctAnswer: ["were", "would give"] },
-            { id: "q3", prompt: "3. If we [gap1] a car, we [gap2] to the countryside. (own / travel)", correctAnswer: ["owned", "would travel"] },
-            { id: "q4", prompt: "4. If he [gap1] his keys, he [gap2] a locksmith. (not lose / not call)", correctAnswer: ["didn't lose", "wouldn't call"] },
-            { id: "q5", prompt: "5. If they [gap1] the instructions, they [gap2] the project on time. (follow / complete)", correctAnswer: ["followed", "would complete"] },
-            { id: "q6", prompt: "6. If I [gap1] a bicycle, I [gap2] to work. (have / not walk)", correctAnswer: ["had", "wouldn't walk"] },
-            { id: "q7", prompt: "7. If you [gap1] earlier, you [gap2] the bus. (leave / catch)", correctAnswer: ["left", "would catch"] },
-            { id: "q8", prompt: "8. If she [gap1] the exam, she [gap2] very proud. (pass / feel)", correctAnswer: ["passed", "would feel"] },
-            { id: "q9", prompt: "9. If we [gap1] in a bigger house, we [gap2] more friends. (live / invite)", correctAnswer: ["lived", "would invite"] },
-            { id: "q10", prompt: "10. If I [gap1] you, I [gap2] a different job. (be / find)", correctAnswer: ["were", "would find"] },
-          ]
-        },
-        {
-          id: "task9",
-          title: "Task 9",
-          instructions: "Complete the sentences with a, b or c.",
-          type: "MCQ",
-          questions: [
-            { id: "q1", prompt: "1. I’ll text you _____I get home", options: [{label: "before", value: "a"}, {label: "as soon as", value: "b"}, {label: "if", value: "c"}], correctAnswer: "b" },
-            { id: "q2", prompt: "2. We’ll go for a walk __________ it stops raining.", options: [{label: "If", value: "a"}, {label: "before", value: "b"}, {label: "after", value: "c"}], correctAnswer: "c" },
-            { id: "q3", prompt: "3. She’ll feel much better ______she takes some medicine.", options: [{label: "when", value: "a"}, {label: "if", value: "b"}, {label: "before", value: "c"}], correctAnswer: "b" },
-            { id: "q4", prompt: "4. Don’t forget to lock the door ______ you leave.", options: [{label: "after", value: "a"}, {label: "before", value: "b"}, {label: "if", value: "c"}], correctAnswer: "b" },
-            { id: "q5", prompt: "5. He’ll buy a car ____ he saves enough money.", options: [{label: "before", value: "a"}, {label: "when", value: "b"}, {label: "after", value: "c"}], correctAnswer: "b" },
-            { id: "q6", prompt: "6. __________ the movie ends, we’ll go for dinner.", options: [{label: "If", value: "a"}, {label: "After", value: "b"}, {label: "Before", value: "c"}], correctAnswer: "b" },
-            { id: "q7", prompt: "7. I’ll remind you __________ the test starts.", options: [{label: "after", value: "a"}, {label: "when", value: "b"}, {label: "before", value: "c"}], correctAnswer: "c" },
-            { id: "q8", prompt: "8. They will celebrate _______ they hear the good news.", options: [{label: "if", value: "a"}, {label: "as soon as", value: "b"}, {label: "before", value: "c"}], correctAnswer: "b" },
-            { id: "q9", prompt: "9. We will go outside ______the sun comes out.", options: [{label: "if", value: "a"}, {label: "after", value: "b"}, {label: "before", value: "c"}], correctAnswer: "a" },
-            { id: "q10", prompt: "10. She always drinks coffee _______ starting work.", options: [{label: "after", value: "a"}, {label: "if", value: "b"}, {label: "when", value: "c"}], correctAnswer: "c" },
-          ]
-        },
-        {
-          id: "task10",
-          title: "Task 10 & 11",
-          instructions: "Complete the text with the correct PASSIVE form of the verbs in brackets.",
-          type: "FILL_IN",
-          questions: [
-            { id: "q1", prompt: "Old books [gap1] (replace) last month with new ones.", correctAnswer: ["were replaced"] },
-            { id: "q2", prompt: "The computers [gap1] (use) by students to do research.", correctAnswer: ["are used"] },
-            { id: "q3", prompt: "A new reading area [gap1] (add) last week.", correctAnswer: ["was added"] },
-            { id: "q4", prompt: "Magazines [gap1] (deliver) every Monday.", correctAnswer: ["are delivered"] },
-            { id: "q5", prompt: "The rules [gap1] (explain) at the beginning of the year.", correctAnswer: ["are explained"] },
-          ]
-        }
-      ]
-    },
-    {
-      title: "VOCABULARY & WRITING",
-      tasks: [
-        {
-          id: "task16",
-          title: "Task 16",
-          instructions: "Complete the sentences with make or do and a word from the box.",
-          type: "FILL_IN",
-          boxOptions: ["a lot of money", "nothing", "housework", "a decision", "a mistake", "choice", "plan", "homework", "exercise"],
-          questions: [
-            { id: "q1", prompt: "1. I usually [gap1] in the morning before breakfast.", correctAnswer: ["do exercise"] },
-            { id: "q2", prompt: "2. She didn’t study enough, so she [gap1] in the test.", correctAnswer: ["made a mistake"] },
-            { id: "q3", prompt: "3. You have to [gap1] — do you want coffee or tea?", correctAnswer: ["make a decision"] },
-            { id: "q4", prompt: "4. They [gap1] when they moved to a different city.", correctAnswer: ["made a lot of money"] },
-            { id: "q5", prompt: "5. My brother works in IT and [gap1] every month.", correctAnswer: ["does homework"] },
-          ]
-        },
-        {
-          id: "task24",
-          title: "Task 24",
-          instructions: "Choose the correct answer from the words in italics.",
-          type: "MCQ",
-          questions: [
-            { id: "q1", prompt: "1) She didn’t study much. (However / Although), she still passed.", options: [{label: "However", value: "However"}, {label: "Although", value: "Although"}], correctAnswer: "However" },
-            { id: "q2", prompt: "2) I continued working (despite / even though) I was very tired.", options: [{label: "despite", value: "despite"}, {label: "even though", value: "even though"}], correctAnswer: "even though" },
-            { id: "q3", prompt: "3) (Even though / Despite) feeling sick, he went to work.", options: [{label: "Even though", value: "Even though"}, {label: "Despite", value: "Despite"}], correctAnswer: "Despite" },
-          ]
-        },
-        {
-          id: "writing",
-          title: "Writing Training",
-          instructions: "Write about social networks (80-100 words). Advantages, disadvantages of online shopping, your opinions.",
-          type: "TEXT_AREA",
-          questions: [{ id: "essay", prompt: "Write your response here:" }]
-        }
-      ]
-    }
-  ]
-};
+export const navigateB1Exams: Exam[] = [
+  {
+    title: "Version A: Grammar & Vocabulary Focus",
+    durationMinutes: 70,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "task1",
+            title: "Task 1",
+            instructions: "Choose the correct option: will, won’t, might or might not.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. If call him now, he ________ answer. It is late.", options: [{label: "might", value: "a"}, {label: "might not", value: "b"}, {label: "will", value: "c"}], correctAnswer: "b" },
+              { id: "q2", prompt: "2. She ________ go to the concert. She hasn’t decided yet.", options: [{label: "might", value: "a"}, {label: "won’t", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
+              { id: "q3", prompt: "3. They ________ come to visit us. They’re busy this weekend.", options: [{label: "won’t", value: "a"}, {label: "will", value: "b"}, {label: "might", value: "c"}], correctAnswer: "a" },
+              { id: "q4", prompt: "4. If you don’t eat breakfast, you ________ feel tired later.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "won’t", value: "c"}], correctAnswer: "a" },
+              { id: "q5", prompt: "5. There ___be any milk left in the fridge. We should check.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "won’t", value: "c"}], correctAnswer: "b" },
+              { id: "q6", prompt: "6. I ____ help you with your homework later if I have time.", options: [{label: "might", value: "a"}, {label: "won’t", value: "b"}, {label: "might not", value: "c"}], correctAnswer: "a" },
+              { id: "q7", prompt: "7. Jane ________ go to the meeting. She said she’s feeling unwell.", options: [{label: "might not", value: "a"}, {label: "will", value: "b"}, {label: "won’t", value: "c"}], correctAnswer: "c" },
+              { id: "q8", prompt: "8. He _____buy a new car soon. He’s been saving up for months.", options: [{label: "won’t", value: "a"}, {label: "might not", value: "b"}, {label: "will", value: "c"}], correctAnswer: "c" },
+              { id: "q9", prompt: "9. You ____see dolphins during the boat trip. It’s a rare but exciting chance!", options: [{label: "might", value: "a"}, {label: "won’t", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
+              { id: "q10", prompt: "10. My brother _____ clean his room unless my mom tells him to.", options: [{label: "won’t", value: "a"}, {label: "might not", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
+            ]
+          },
+          {
+            id: "task3",
+            title: "Task 3",
+            instructions: "Complete the sentence with past simple or past continuous form.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1) While my mother [gap1] (cook) dinner, my sister [gap2] (come) home.", correctAnswer: ["was cooking", "came"] },
+              { id: "q2", prompt: "2) They [gap1] (have) dinner when I arrived at the restaurant.", correctAnswer: ["were having"] },
+            ]
+          }
+        ]
+      },
+      {
+        title: "WRITING",
+        tasks: [
+          {
+            id: "writingA",
+            title: "Writing Assessment",
+            instructions: "Write about social networks (80-100 words).",
+            type: "TEXT_AREA",
+            questions: [{ id: "essay", prompt: "Write your response here:" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version B: Comprehensive Assessment",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vB_task1",
+            title: "Task 1",
+            instructions: "Choose: will, won’t, might or might not.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Take an umbrella. It ________ rain later, look at those dark clouds.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "b" },
+              { id: "q2", prompt: "2. I promise I ________ tell anyone your secret.", options: [{label: "might not", value: "a"}, {label: "won't", value: "b"}, {label: "might", value: "c"}], correctAnswer: "b" },
+              { id: "q3", prompt: "3. We ________ go to Samarkand this weekend, but we haven't booked tickets yet.", options: [{label: "will", value: "a"}, {label: "won't", value: "b"}, {label: "might", value: "c"}], correctAnswer: "c" },
+              { id: "q4", prompt: "4. If you study hard, you ________ pass the IELTS exam easily.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q5", prompt: "5. Don't drink coffee now. You ________ sleep well tonight.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "c" },
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version C: Mastery Assessment",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vC_task1",
+            title: "Task 1",
+            instructions: "Choose: will, won’t, might or might not.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Be careful! You ________ fall off the bike.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "b" },
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version D: Gamer Edition",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vD_task1",
+            title: "Task 1",
+            instructions: "Themes: Roblox, GTA 5, Stranger Things.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Be careful in the Upside Down! The Demogorgon ________ find you.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "b" },
+              { id: "q2", prompt: "2. I promise I ________ grief your house in Brookhaven.", options: [{label: "might not", value: "a"}, {label: "won't", value: "b"}, {label: "might", value: "c"}], correctAnswer: "b" },
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version E: The Mixed Edition",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vE_task1",
+            title: "Task 1",
+            instructions: "Roblox, Standoff 2, Cars, Stranger Things. Choose the correct option.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Jump now! The lava ________ catch you if you stay there.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q2", prompt: "2. I ________ buy the AWM sniper rifle in Standoff 2 because I don't have enough gold.", options: [{label: "might not", value: "a"}, {label: "won't", value: "b"}, {label: "might", value: "c"}], correctAnswer: "b" },
+              { id: "q3", prompt: "3. The new season of Stranger Things ________ be released next year, but it's not confirmed.", options: [{label: "will", value: "a"}, {label: "won't", value: "b"}, {label: "might", value: "c"}], correctAnswer: "c" },
+              { id: "q4", prompt: "4. If you fix the engine, the car ________ run much faster.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q5", prompt: "5. Don't touch the red block! You ________ lose a life.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+            ]
+          },
+          {
+            id: "vE_task3_4",
+            title: "Task 3 & 4",
+            instructions: "Past Simple or Past Continuous.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. While I [gap1] (defuse) the bomb in Standoff 2, the enemy [gap2] (shoot) me.", correctAnswer: ["was defusing", "shot"] },
+              { id: "q2", prompt: "2. Eleven [gap1] (eat) waffles when Mike [gap2] (call) her on the radio.", correctAnswer: ["was eating", "called"] },
+              { id: "q3", prompt: "3. We [gap1] (play) \"Floor is Lava\" in Roblox when my internet [gap2] (stop) working.", correctAnswer: ["were playing", "stopped"] },
+              { id: "q4", prompt: "4. The mechanic [gap1] (repair) the Ferrari while the driver [gap2] (wait).", correctAnswer: ["was repairing", "waited"] },
+            ]
+          },
+          {
+            id: "vE_task5_6",
+            title: "Task 5 & 6",
+            instructions: "Choose the correct modal verb (must, have to, can).",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. You ________ reload your weapon before you shoot again.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
+              { id: "q2", prompt: "2. In the \"Floor is Lava\" game, you ________ touch the ground.", options: [{label: "mustn't", value: "mustn't"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "mustn't" },
+              { id: "q3", prompt: "3. ________ Eleven use her powers to find Will?", options: [{label: "Can", value: "Can"}, {label: "Must", value: "Must"}], correctAnswer: "Can" },
+              { id: "q4", prompt: "4. You ________ drive fast in the city; it is dangerous.", options: [{label: "don't have to", value: "don't have to"}, {label: "mustn't", value: "mustn't"}], correctAnswer: "mustn't" },
+            ]
+          },
+          {
+            id: "vE_task7_8",
+            title: "Task 7 & 8",
+            instructions: "Conditionals (First & Second).",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. If the lava [gap1] (rise), we [gap2] (climb) to the roof. (1st Cond)", correctAnswer: ["rises", "will climb"] },
+              { id: "q2", prompt: "2. If I [gap1] (have) a Lamborghini, I [gap2] (drive) to Dubai. (2nd Cond)", correctAnswer: ["had", "would drive"] },
+              { id: "q3", prompt: "3. I [gap1] (win) the match if my team [gap2] (help) me. (2nd Cond)", correctAnswer: ["would win", "helped"] },
+            ]
+          },
+          {
+            id: "vE_task10",
+            title: "Task 10",
+            instructions: "Passive Voice.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. The demogorgon [gap1] (defeat) by Eleven in the last episode.", correctAnswer: ["was defeated"] },
+              { id: "q2", prompt: "2. New maps [gap1] (add) to Standoff 2 every update.", correctAnswer: ["are added"] },
+              { id: "q3", prompt: "3. This car [gap1] (make) in Germany.", correctAnswer: ["is made"] },
+            ]
+          },
+          {
+            id: "vE_task16",
+            title: "Task 16",
+            instructions: "Make or Do.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Did you ________ a lot of kills in the last round?", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
+              { id: "q2", prompt: "2. I need to ________ a decision: buy the skin or save the gold?", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
+            ]
+          }
+        ]
+      },
+      {
+        title: "WRITING",
+        tasks: [
+          {
+            id: "vE_writing",
+            title: "Writing Assessment",
+            instructions: "Online Shopping vs. Traditional Shopping (80-100 words).",
+            type: "TEXT_AREA",
+            questions: [{ id: "essay", prompt: "Write your response here:" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version F: The Shooter Edition",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vF_task1",
+            title: "Task 1",
+            instructions: "Standoff 2 & Stranger Things Action. Choose the correct option.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. If you camp in that corner, they ________ find you easily.", options: [{label: "will", value: "a"}, {label: "might not", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q2", prompt: "2. We ________ win this round. The other team is very strong.", options: [{label: "might not", value: "a"}, {label: "will", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q3", prompt: "3. Hopper ________ survive the explosion, but nobody knows for sure.", options: [{label: "will", value: "a"}, {label: "won't", value: "b"}, {label: "might", value: "c"}], correctAnswer: "c" },
+              { id: "q4", prompt: "4. I ________ play ranked mode today because my ping is too high.", options: [{label: "won't", value: "a"}, {label: "might", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
+              { id: "q5", prompt: "5. Be careful! The enemy ________ be hiding behind that box.", options: [{label: "might", value: "a"}, {label: "won't", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
+            ]
+          },
+          {
+            id: "vF_task3_4",
+            title: "Task 3 & 4",
+            instructions: "Past Simple or Past Continuous.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. My team [gap1] (rush) B site when the grenade [gap2] (explode).", correctAnswer: ["were rushing", "exploded"] },
+              { id: "q2", prompt: "2. While Steve [gap1] (fight) with the bat, Nancy [gap2] (shoot) the monster.", correctAnswer: ["was fighting", "shot"] },
+              { id: "q3", prompt: "3. I [gap1] (buy) a new knife skin while I [gap2] (wait) for the match to start.", correctAnswer: ["bought", "was waiting"] },
+              { id: "q4", prompt: "4. The police chief [gap1] (look) for clues when he [gap2] (find) the secret lab.", correctAnswer: ["was looking", "found"] },
+            ]
+          },
+          {
+            id: "vF_task5_6",
+            title: "Task 5 & 6",
+            instructions: "Choose the correct modal verb (must, have to, can).",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. You ________ plant the bomb before the time runs out.", options: [{label: "must", value: "must"}, {label: "can", value: "can"}], correctAnswer: "must" },
+              { id: "q2", prompt: "2. Snipers ________ move too much, or they will miss the shot.", options: [{label: "don't have to", value: "don't have to"}, {label: "mustn't", value: "mustn't"}], correctAnswer: "mustn't" },
+              { id: "q3", prompt: "3. ________ I join your clan in Standoff 2?", options: [{label: "Can", value: "Can"}, {label: "Have to", value: "Have to"}], correctAnswer: "Can" },
+              { id: "q4", prompt: "4. Soldiers ________ follow orders from the commander.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
+            ]
+          },
+          {
+            id: "vF_task7_8",
+            title: "Task 7 & 8",
+            instructions: "Conditionals (First & Second).",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. If we [gap1] (lose) this round, we [gap2] (lose) the match. (1st Cond)", correctAnswer: ["lose", "will lose"] },
+              { id: "q2", prompt: "2. If I [gap1] (be) a pro player, I [gap2] (join) a famous e-sports team. (2nd Cond)", correctAnswer: ["were", "would join"] },
+              { id: "q3", prompt: "3. If Max [gap1] (listen) to music, Vecna [gap2] (not/catch) her. (2nd Cond)", correctAnswer: ["listened", "wouldn't catch"] },
+            ]
+          },
+          {
+            id: "vF_task10",
+            title: "Task 10",
+            instructions: "Passive Voice.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. The bomb [gap1] (plant) at Site A.", correctAnswer: ["is planted"] },
+              { id: "q2", prompt: "2. The Mind Flayer [gap1] (control) by Vecna.", correctAnswer: ["is controlled"] },
+              { id: "q3", prompt: "3. Thousands of cases [gap1] (open) by players every day.", correctAnswer: ["are opened"] },
+            ]
+          },
+          {
+            id: "vF_task16",
+            title: "Task 16",
+            instructions: "Make or Do.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Don't ________ a noise, the enemy is near!", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
+              { id: "q2", prompt: "2. You must ________ your best to rank up.", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "do" },
+            ]
+          }
+        ]
+      },
+      {
+        title: "WRITING",
+        tasks: [
+          {
+            id: "vF_writing",
+            title: "Writing Assessment",
+            instructions: "Online Shopping vs. Traditional Shopping (80-100 words).",
+            type: "TEXT_AREA",
+            questions: [{ id: "essay", prompt: "Write your response here:" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version G: The Speed & Parkour Edition",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vG_task1",
+            title: "Task 1",
+            instructions: "Focus on Cars & Roblox (Lava/Obby). Choose the correct option.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. If you don't brake now, you ________ crash the car.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q2", prompt: "2. This parkour is hard. I ________ complete it on the first try.", options: [{label: "might not", value: "a"}, {label: "will", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q3", prompt: "3. The lava ________ rise higher in the next level.", options: [{label: "will", value: "a"}, {label: "won't", value: "b"}, {label: "might", value: "c"}], correctAnswer: "a" },
+              { id: "q4", prompt: "4. I ________ buy a Ferrari one day if I become rich.", options: [{label: "might", value: "a"}, {label: "won't", value: "b"}, {label: "will", value: "c"}], correctAnswer: "c" },
+              { id: "q5", prompt: "5. The mechanic ________ fix the turbo today. He is very busy.", options: [{label: "might not", value: "a"}, {label: "will", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+            ]
+          },
+          {
+            id: "vG_task3_4",
+            title: "Task 3 & 4",
+            instructions: "Past Simple or Past Continuous.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. While I [gap1] (race) on the track, my tire [gap2] (explode).", correctAnswer: ["was racing", "exploded"] },
+              { id: "q2", prompt: "2. My character [gap1] (jump) over the lava when he [gap2] (fall).", correctAnswer: ["was jumping", "fell"] },
+              { id: "q3", prompt: "3. We [gap1] (tune) the engine while the sun [gap2] (go) down.", correctAnswer: ["were tuning", "was going"] },
+              { id: "q4", prompt: "4. He [gap1] (drive) too fast when the police [gap2] (stop) him.", correctAnswer: ["was driving", "stopped"] },
+            ]
+          },
+          {
+            id: "vG_task5_6",
+            title: "Task 5 & 6",
+            instructions: "Choose the correct modal verb (must, have to, can).",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. You ________ touch the red lasers in the Obby.", options: [{label: "mustn't", value: "mustn't"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "mustn't" },
+              { id: "q2", prompt: "2. Drivers ________ wear a seatbelt in the race car.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
+              { id: "q3", prompt: "3. You ________ customize your car color in the garage.", options: [{label: "can", value: "can"}, {label: "must", value: "must"}], correctAnswer: "can" },
+              { id: "q4", prompt: "4. In \"Floor is Lava\", players ________ climb on furniture to survive.", options: [{label: "must", value: "must"}, {label: "can", value: "can"}], correctAnswer: "must" },
+            ]
+          },
+          {
+            id: "vG_task7_8",
+            title: "Task 7 & 8",
+            instructions: "Conditionals (First & Second).",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. If the car [gap1] (run) out of gas, we [gap2] (stop). (1st Cond)", correctAnswer: ["runs", "will stop"] },
+              { id: "q2", prompt: "2. If I [gap1] (have) a jetpack in Roblox, I [gap2] (fly) over the lava. (2nd Cond)", correctAnswer: ["had", "would fly"] },
+              { id: "q3", prompt: "3. If this car [gap1] (be) cheaper, I [gap2] (buy) it. (2nd Cond)", correctAnswer: ["were", "would buy"] },
+            ]
+          },
+          {
+            id: "vG_task10",
+            title: "Task 10",
+            instructions: "Passive Voice.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. The fastest lap [gap1] (drive) by Lewis Hamilton.", correctAnswer: ["was driven"] },
+              { id: "q2", prompt: "2. This Roblox map [gap1] (create) by a famous developer.", correctAnswer: ["was created"] },
+              { id: "q3", prompt: "3. Electric cars [gap1] (charge) at the station.", correctAnswer: ["are charged"] },
+            ]
+          },
+          {
+            id: "vG_task16",
+            title: "Task 16",
+            instructions: "Make or Do.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Can you ________ a U-turn here?", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
+              { id: "q2", prompt: "2. I always ________ my daily quests in Roblox.", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "do" },
+            ]
+          }
+        ]
+      },
+      {
+        title: "WRITING",
+        tasks: [
+          {
+            id: "vG_writing",
+            title: "Writing Assessment",
+            instructions: "Online Shopping vs. Traditional Shopping (80-100 words).",
+            type: "TEXT_AREA",
+            questions: [{ id: "essay", prompt: "Write your response here:" }]
+          }
+        ]
+      }
+    ]
+  }
+];
