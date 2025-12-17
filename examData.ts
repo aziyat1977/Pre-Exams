@@ -151,29 +151,6 @@ export const navigateB1Exams: Exam[] = [
             ]
           },
           {
-            id: "vE_task5_6",
-            title: "Task 5 & 6",
-            instructions: "Choose the correct modal verb (must, have to, can).",
-            type: "MCQ",
-            questions: [
-              { id: "q1", prompt: "1. You ________ reload your weapon before you shoot again.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
-              { id: "q2", prompt: "2. In the \"Floor is Lava\" game, you ________ touch the ground.", options: [{label: "mustn't", value: "mustn't"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "mustn't" },
-              { id: "q3", prompt: "3. ________ Eleven use her powers to find Will?", options: [{label: "Can", value: "Can"}, {label: "Must", value: "Must"}], correctAnswer: "Can" },
-              { id: "q4", prompt: "4. You ________ drive fast in the city; it is dangerous.", options: [{label: "don't have to", value: "don't have to"}, {label: "mustn't", value: "mustn't"}], correctAnswer: "mustn't" },
-            ]
-          },
-          {
-            id: "vE_task7_8",
-            title: "Task 7 & 8",
-            instructions: "Conditionals (First & Second).",
-            type: "FILL_IN",
-            questions: [
-              { id: "q1", prompt: "1. If the lava [gap1] (rise), we [gap2] (climb) to the roof. (1st Cond)", correctAnswer: ["rises", "will climb"] },
-              { id: "q2", prompt: "2. If I [gap1] (have) a Lamborghini, I [gap2] (drive) to Dubai. (2nd Cond)", correctAnswer: ["had", "would drive"] },
-              { id: "q3", prompt: "3. I [gap1] (win) the match if my team [gap2] (help) me. (2nd Cond)", correctAnswer: ["would win", "helped"] },
-            ]
-          },
-          {
             id: "vE_task10",
             title: "Task 10",
             instructions: "Passive Voice.",
@@ -183,28 +160,6 @@ export const navigateB1Exams: Exam[] = [
               { id: "q2", prompt: "2. New maps [gap1] (add) to Standoff 2 every update.", correctAnswer: ["are added"] },
               { id: "q3", prompt: "3. This car [gap1] (make) in Germany.", correctAnswer: ["is made"] },
             ]
-          },
-          {
-            id: "vE_task16",
-            title: "Task 16",
-            instructions: "Make or Do.",
-            type: "MCQ",
-            questions: [
-              { id: "q1", prompt: "1. Did you ________ a lot of kills in the last round?", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
-              { id: "q2", prompt: "2. I need to ________ a decision: buy the skin or save the gold?", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
-            ]
-          }
-        ]
-      },
-      {
-        title: "WRITING",
-        tasks: [
-          {
-            id: "vE_writing",
-            title: "Writing Assessment",
-            instructions: "Online Shopping vs. Traditional Shopping (80-100 words).",
-            type: "TEXT_AREA",
-            questions: [{ id: "essay", prompt: "Write your response here:" }]
           }
         ]
       }
@@ -229,74 +184,6 @@ export const navigateB1Exams: Exam[] = [
               { id: "q4", prompt: "4. I ________ play ranked mode today because my ping is too high.", options: [{label: "won't", value: "a"}, {label: "might", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
               { id: "q5", prompt: "5. Be careful! The enemy ________ be hiding behind that box.", options: [{label: "might", value: "a"}, {label: "won't", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
             ]
-          },
-          {
-            id: "vF_task3_4",
-            title: "Task 3 & 4",
-            instructions: "Past Simple or Past Continuous.",
-            type: "FILL_IN",
-            questions: [
-              { id: "q1", prompt: "1. My team [gap1] (rush) B site when the grenade [gap2] (explode).", correctAnswer: ["were rushing", "exploded"] },
-              { id: "q2", prompt: "2. While Steve [gap1] (fight) with the bat, Nancy [gap2] (shoot) the monster.", correctAnswer: ["was fighting", "shot"] },
-              { id: "q3", prompt: "3. I [gap1] (buy) a new knife skin while I [gap2] (wait) for the match to start.", correctAnswer: ["bought", "was waiting"] },
-              { id: "q4", prompt: "4. The police chief [gap1] (look) for clues when he [gap2] (find) the secret lab.", correctAnswer: ["was looking", "found"] },
-            ]
-          },
-          {
-            id: "vF_task5_6",
-            title: "Task 5 & 6",
-            instructions: "Choose the correct modal verb (must, have to, can).",
-            type: "MCQ",
-            questions: [
-              { id: "q1", prompt: "1. You ________ plant the bomb before the time runs out.", options: [{label: "must", value: "must"}, {label: "can", value: "can"}], correctAnswer: "must" },
-              { id: "q2", prompt: "2. Snipers ________ move too much, or they will miss the shot.", options: [{label: "don't have to", value: "don't have to"}, {label: "mustn't", value: "mustn't"}], correctAnswer: "mustn't" },
-              { id: "q3", prompt: "3. ________ I join your clan in Standoff 2?", options: [{label: "Can", value: "Can"}, {label: "Have to", value: "Have to"}], correctAnswer: "Can" },
-              { id: "q4", prompt: "4. Soldiers ________ follow orders from the commander.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
-            ]
-          },
-          {
-            id: "vF_task7_8",
-            title: "Task 7 & 8",
-            instructions: "Conditionals (First & Second).",
-            type: "FILL_IN",
-            questions: [
-              { id: "q1", prompt: "1. If we [gap1] (lose) this round, we [gap2] (lose) the match. (1st Cond)", correctAnswer: ["lose", "will lose"] },
-              { id: "q2", prompt: "2. If I [gap1] (be) a pro player, I [gap2] (join) a famous e-sports team. (2nd Cond)", correctAnswer: ["were", "would join"] },
-              { id: "q3", prompt: "3. If Max [gap1] (listen) to music, Vecna [gap2] (not/catch) her. (2nd Cond)", correctAnswer: ["listened", "wouldn't catch"] },
-            ]
-          },
-          {
-            id: "vF_task10",
-            title: "Task 10",
-            instructions: "Passive Voice.",
-            type: "FILL_IN",
-            questions: [
-              { id: "q1", prompt: "1. The bomb [gap1] (plant) at Site A.", correctAnswer: ["is planted"] },
-              { id: "q2", prompt: "2. The Mind Flayer [gap1] (control) by Vecna.", correctAnswer: ["is controlled"] },
-              { id: "q3", prompt: "3. Thousands of cases [gap1] (open) by players every day.", correctAnswer: ["are opened"] },
-            ]
-          },
-          {
-            id: "vF_task16",
-            title: "Task 16",
-            instructions: "Make or Do.",
-            type: "MCQ",
-            questions: [
-              { id: "q1", prompt: "1. Don't ________ a noise, the enemy is near!", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
-              { id: "q2", prompt: "2. You must ________ your best to rank up.", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "do" },
-            ]
-          }
-        ]
-      },
-      {
-        title: "WRITING",
-        tasks: [
-          {
-            id: "vF_writing",
-            title: "Writing Assessment",
-            instructions: "Online Shopping vs. Traditional Shopping (80-100 words).",
-            type: "TEXT_AREA",
-            questions: [{ id: "essay", prompt: "Write your response here:" }]
           }
         ]
       }
@@ -321,61 +208,149 @@ export const navigateB1Exams: Exam[] = [
               { id: "q4", prompt: "4. I ________ buy a Ferrari one day if I become rich.", options: [{label: "might", value: "a"}, {label: "won't", value: "b"}, {label: "will", value: "c"}], correctAnswer: "c" },
               { id: "q5", prompt: "5. The mechanic ________ fix the turbo today. He is very busy.", options: [{label: "might not", value: "a"}, {label: "will", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version H: The Adventure Edition",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vH_task1",
+            title: "Task 1",
+            instructions: "Minecraft & Exploration. Choose: will, won't, might or might not.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. Be careful! If you dig straight down, you ________ fall into lava.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q2", prompt: "2. We ________ find diamonds in this cave, but I'm not sure.", options: [{label: "might", value: "a"}, {label: "will", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q3", prompt: "3. I ________ build a house today; I don't have enough wood.", options: [{label: "won't", value: "a"}, {label: "might", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
+              { id: "q4", prompt: "4. If we travel north, we ________ find a village eventually.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+            ]
           },
           {
-            id: "vG_task3_4",
+            id: "vH_task3_4",
             title: "Task 3 & 4",
             instructions: "Past Simple or Past Continuous.",
             type: "FILL_IN",
             questions: [
-              { id: "q1", prompt: "1. While I [gap1] (race) on the track, my tire [gap2] (explode).", correctAnswer: ["was racing", "exploded"] },
-              { id: "q2", prompt: "2. My character [gap1] (jump) over the lava when he [gap2] (fall).", correctAnswer: ["was jumping", "fell"] },
-              { id: "q3", prompt: "3. We [gap1] (tune) the engine while the sun [gap2] (go) down.", correctAnswer: ["were tuning", "was going"] },
-              { id: "q4", prompt: "4. He [gap1] (drive) too fast when the police [gap2] (stop) him.", correctAnswer: ["was driving", "stopped"] },
+              { id: "q1", prompt: "1. While I [gap1] (mine) for coal, a creeper [gap2] (explode) behind me.", correctAnswer: ["was mining", "exploded"] },
+              { id: "q2", prompt: "2. Steve [gap1] (build) a bridge when he [gap2] (see) an Enderman.", correctAnswer: ["was building", "saw"] },
+              { id: "q3", prompt: "3. We [gap1] (not/know) about the jungle temple until we [gap2] (find) the map.", correctAnswer: ["didn't know", "found"] },
             ]
           },
           {
-            id: "vG_task5_6",
+            id: "vH_task5_6",
             title: "Task 5 & 6",
-            instructions: "Choose the correct modal verb (must, have to, can).",
+            instructions: "Modals: must, have to, can.",
             type: "MCQ",
             questions: [
-              { id: "q1", prompt: "1. You ________ touch the red lasers in the Obby.", options: [{label: "mustn't", value: "mustn't"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "mustn't" },
-              { id: "q2", prompt: "2. Drivers ________ wear a seatbelt in the race car.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
-              { id: "q3", prompt: "3. You ________ customize your car color in the garage.", options: [{label: "can", value: "can"}, {label: "must", value: "must"}], correctAnswer: "can" },
-              { id: "q4", prompt: "4. In \"Floor is Lava\", players ________ climb on furniture to survive.", options: [{label: "must", value: "must"}, {label: "can", value: "can"}], correctAnswer: "must" },
+              { id: "q1", prompt: "1. You ________ wear armor if you want to survive the night.", options: [{label: "must", value: "must"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "must" },
+              { id: "q2", prompt: "2. Players ________ craft a pickaxe before they can mine stone.", options: [{label: "have to", value: "have to"}, {label: "can", value: "can"}], correctAnswer: "have to" },
+              { id: "q3", prompt: "3. You ________ fly in survival mode; it's impossible.", options: [{label: "can't", value: "can't"}, {label: "mustn't", value: "mustn't"}], correctAnswer: "can't" },
             ]
           },
           {
-            id: "vG_task7_8",
+            id: "vH_task7_8",
             title: "Task 7 & 8",
-            instructions: "Conditionals (First & Second).",
+            instructions: "Conditionals.",
             type: "FILL_IN",
             questions: [
-              { id: "q1", prompt: "1. If the car [gap1] (run) out of gas, we [gap2] (stop). (1st Cond)", correctAnswer: ["runs", "will stop"] },
-              { id: "q2", prompt: "2. If I [gap1] (have) a jetpack in Roblox, I [gap2] (fly) over the lava. (2nd Cond)", correctAnswer: ["had", "would fly"] },
-              { id: "q3", prompt: "3. If this car [gap1] (be) cheaper, I [gap2] (buy) it. (2nd Cond)", correctAnswer: ["were", "would buy"] },
+              { id: "q1", prompt: "1. If I [gap1] (find) treasure, I [gap2] (share) it with you. (1st Cond)", correctAnswer: ["find", "will share"] },
+              { id: "q2", prompt: "2. If I [gap1] (be) a pro explorer, I [gap2] (not/get) lost. (2nd Cond)", correctAnswer: ["were", "wouldn't get"] },
             ]
           },
           {
-            id: "vG_task10",
+            id: "vH_task10",
             title: "Task 10",
             instructions: "Passive Voice.",
             type: "FILL_IN",
             questions: [
-              { id: "q1", prompt: "1. The fastest lap [gap1] (drive) by Lewis Hamilton.", correctAnswer: ["was driven"] },
-              { id: "q2", prompt: "2. This Roblox map [gap1] (create) by a famous developer.", correctAnswer: ["was created"] },
-              { id: "q3", prompt: "3. Electric cars [gap1] (charge) at the station.", correctAnswer: ["are charged"] },
+              { id: "q1", prompt: "1. The temple [gap1] (hide) by vines for centuries.", correctAnswer: ["was hidden"] },
+              { id: "q2", prompt: "2. Rare items [gap1] (trade) by villagers for emeralds.", correctAnswer: ["are traded"] },
             ]
-          },
+          }
+        ]
+      },
+      {
+        title: "VOCABULARY",
+        tasks: [
           {
-            id: "vG_task16",
+            id: "vH_task16",
             title: "Task 16",
             instructions: "Make or Do.",
             type: "MCQ",
             questions: [
-              { id: "q1", prompt: "1. Can you ________ a U-turn here?", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
-              { id: "q2", prompt: "2. I always ________ my daily quests in Roblox.", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "do" },
+              { id: "q1", prompt: "1. Can you ________ a torch for the cave?", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "make" },
+              { id: "q2", prompt: "2. I need to ________ some research on this map.", options: [{label: "make", value: "make"}, {label: "do", value: "do"}], correctAnswer: "do" },
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Version I: The Cinema & Story Edition",
+    durationMinutes: 60,
+    sections: [
+      {
+        title: "GRAMMAR TASKS",
+        tasks: [
+          {
+            id: "vI_task1",
+            title: "Task 1",
+            instructions: "Hollywood & Stranger Things. Choose the correct option.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. The director says the new movie ________ be a huge success.", options: [{label: "will", value: "a"}, {label: "might", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+              { id: "q2", prompt: "2. I ________ watch the horror film; I'm too scared.", options: [{label: "won't", value: "a"}, {label: "might", value: "b"}, {label: "will", value: "c"}], correctAnswer: "a" },
+              { id: "q3", prompt: "3. They ________ win an Oscar, but the competition is tough.", options: [{label: "might", value: "a"}, {label: "will", value: "b"}, {label: "won't", value: "c"}], correctAnswer: "a" },
+            ]
+          },
+          {
+            id: "vI_task3_4",
+            title: "Task 3 & 4",
+            instructions: "Past Simple or Past Continuous.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. While the actors [gap1] (rehearse), the lights [gap2] (go) out.", correctAnswer: ["were rehearsing", "went"] },
+              { id: "q2", prompt: "2. I [gap1] (not/like) the ending of the film we [gap2] (watch) last night.", correctAnswer: ["didn't like", "watched"] },
+              { id: "q3", prompt: "3. She [gap1] (audition) for the role when the phone [gap2] (ring).", correctAnswer: ["was auditioning", "rang"] },
+            ]
+          },
+          {
+            id: "vI_task5_6",
+            title: "Task 5 & 6",
+            instructions: "Modals: must, have to, can.",
+            type: "MCQ",
+            questions: [
+              { id: "q1", prompt: "1. You ________ turn off your phone in the cinema.", options: [{label: "must", value: "must"}, {label: "can", value: "can"}], correctAnswer: "must" },
+              { id: "q2", prompt: "2. Actors ________ learn their lines before filming starts.", options: [{label: "have to", value: "have to"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "have to" },
+              { id: "q3", prompt: "3. Children ________ watch this movie; it's rated R.", options: [{label: "mustn't", value: "mustn't"}, {label: "don't have to", value: "don't have to"}], correctAnswer: "mustn't" },
+            ]
+          },
+          {
+            id: "vI_task7_8",
+            title: "Task 7 & 8",
+            instructions: "Conditionals.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. If I [gap1] (be) a famous actor, I [gap2] (live) in Hollywood. (2nd Cond)", correctAnswer: ["were", "would live"] },
+              { id: "q2", prompt: "2. If the tickets [gap1] (not/be) so expensive, we [gap2] (go) more often. (2nd Cond)", correctAnswer: ["were not", "would go"] },
+            ]
+          },
+          {
+            id: "vI_task10",
+            title: "Task 10",
+            instructions: "Passive Voice.",
+            type: "FILL_IN",
+            questions: [
+              { id: "q1", prompt: "1. The script [gap1] (write) by a famous author.", correctAnswer: ["was written"] },
+              { id: "q2", prompt: "2. New movies [gap1] (release) every Friday.", correctAnswer: ["are released"] },
             ]
           }
         ]
@@ -384,9 +359,9 @@ export const navigateB1Exams: Exam[] = [
         title: "WRITING",
         tasks: [
           {
-            id: "vG_writing",
+            id: "vI_writing",
             title: "Writing Assessment",
-            instructions: "Online Shopping vs. Traditional Shopping (80-100 words).",
+            instructions: "The Future of Cinema vs. VR Gaming (80-100 words).",
             type: "TEXT_AREA",
             questions: [{ id: "essay", prompt: "Write your response here:" }]
           }
