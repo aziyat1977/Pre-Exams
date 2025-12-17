@@ -120,7 +120,7 @@ const App: React.FC = () => {
           <ThemeToggle isDark={isDark} onToggle={() => setIsDark(!isDark)} />
         </div>
 
-        <div className="max-w-6xl w-full glass dark:border-zinc-800 border border-slate-200 p-8 md:p-12 rounded-[48px] shadow-2xl relative z-10 animate-in fade-in zoom-in duration-1000 text-center">
+        <div className="max-w-7xl w-full glass dark:border-zinc-800 border border-slate-200 p-8 md:p-12 rounded-[48px] shadow-2xl relative z-10 animate-in fade-in zoom-in duration-1000 text-center">
           <div className="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-indigo-500/30">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
           </div>
@@ -132,7 +132,7 @@ const App: React.FC = () => {
             Oxford Pre-Intermediate Assessment Workshop.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8 overflow-y-auto max-h-[50vh] pr-2 custom-scrollbar">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-8 overflow-y-auto max-h-[50vh] pr-2 custom-scrollbar p-2">
             {navigateB1Exams.map((exam, idx) => (
               <button
                 key={idx}
